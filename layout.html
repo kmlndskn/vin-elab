@@ -27,6 +27,8 @@
     <!--====== import Slick Css ======-->
     <link rel="stylesheet" href="css/slick.css" />
 
+    <link rel="stylesheet" href="css/layout.css" />
+
     
   </head>
 
@@ -45,14 +47,20 @@
             <!--====== Header center content _ Main Menu ======-->
             <div class="main-menu">
               <!--====== Header content _ Only show Mobile - Form search ======-->
-              <div class="hide-desktop">
+              <div class="d-lg-none hide-desktop">
+                <div class="button">
+                  <button class="action close-menu">
+                    <img src="images/icons/x-circle.svg" />
+                  </button>
+                </div>
                 <div class="search-form-mb">
                   <form method="get" id="search-form-mb" action="#">
                     <div role="search" class="head-form-search-wrap">
                         <input id="header-search" type="text" value="" name="s" autocomplete="off">
                         <button class="wpb_button btn-search" type="submit" id="td-header-search-top">Search</button>
                     </div>
-                </form>
+                  </form>
+                </div>
               </div>
               <!--====== Header content _ Menu ======-->
               <nav id="site-navigation" class="navbar navbar-default" role="navigation">
@@ -136,7 +144,7 @@
               </nav>
 
               <!--====== Header content _ Only show Mobile - Logo  & Social ======-->
-              <div class="hide-desktop">
+              <div class="d-lg-none hide-desktop">
                 <div class="d-flex static-content-mb">
                   <div class="left-content">
                     <a href="index.html" title="Home Page" class="logo">
@@ -163,7 +171,12 @@
             </div>
             <!--====== Header right content _ Form Search ======-->
             <div class="header-search-wrap">
-              <div class="search-form">
+              <div class="d-block d-lg-none btn-navbar">
+                <button class="action show-menu">
+                  <img class="icon" src="images/icons/tab-list.svg" />
+                </button>
+              </div>
+              <div class="d-none d-lg-block search-form">
                 <form method="get" id="search-form" action="#">
                   <div role="search" class="head-form-search-wrap">
                       <input id="header-search" type="text" value="" name="s" autocomplete="off">
@@ -307,6 +320,8 @@
                     </div>
                     <div class="field textarea">
                       <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message">
+                        </textarea>
+
                     </div>
                   </fieldset>
                   <button type="submit" class="btn btn-full btn-submit">
@@ -325,6 +340,8 @@
     <script src="js/vendor.js"></script>
     <!--====== import Slick Js ======-->
     <script src="js/slick.min.js"></script>
+    <!--====== import Theme Js ======-->
+    <script src="js/theme.js"></script>
 
     <!--====== Noscript ======-->
     <noscript>
