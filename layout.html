@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/slick.css" />
 
     <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
     
   </head>
@@ -41,13 +42,13 @@
             <!--====== Header left content _ Logo ======-->
             <div class="header-left-content">
               <a href="index.html" title="Home Page" class="logo">
-                <img class="img-resposive logo-img" src="images/logo.png" alt="Logo" />
+                <img class="img-responsive logo-img" src="images/logo.png" alt="Logo" />
               </a>
             </div>
             <!--====== Header center content _ Main Menu ======-->
             <div class="main-menu">
               <!--====== Header content _ Only show Mobile - Form search ======-->
-              <div class="d-lg-none hide-desktop">
+              <div class="d-xl-none hide-desktop">
                 <div class="button">
                   <button class="action close-menu">
                     <img src="images/icons/x-circle.svg" />
@@ -56,7 +57,7 @@
                 <div class="search-form-mb">
                   <form method="get" id="search-form-mb" action="#">
                     <div role="search" class="head-form-search-wrap">
-                        <input id="header-search" type="text" value="" name="s" autocomplete="off">
+                        <input id="header-search" type="text" value="" name="s" placeholder="Search .." autocomplete="off">
                         <button class="wpb_button btn-search" type="submit" id="td-header-search-top">Search</button>
                     </div>
                   </form>
@@ -105,8 +106,24 @@
                       </li>
                     </ul>
                   </li>
-                  <!--====== Menu item 'NEWS & RESOURCES' ======-->
-                  <li class="megamenu-item megamenu-item-has-children">
+
+                  <!--====== Menu item 'NEWS & Media' - Only show Desktop ======-->
+                  <li class="d-none d-xl-block megamenu-item megamenu-item-has-children">
+                    <a class="mega-menu-link" href="news-resources.html" title="NEWS & Media">NEWS & Media</a>
+                    <ul class="mega-sub-menu" >
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="news.html" title="NEWS">NEWS</a>
+                      </li>
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="resources.html" title="RESOURCES">RESOURCES</a>
+                      </li>
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="event-calendar.html" title="EVENT CALENDAR">EVENT CALENDAR</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--====== Menu item 'NEWS & RESOURCES' - Only show Mobile ======-->
+                  <li class="d-xl-none  megamenu-item megamenu-item-has-children">
                     <a class="mega-menu-link" href="news-resources.html" title="NEWS & RESOURCES">NEWS & RESOURCES</a>
                     <ul class="mega-sub-menu" >
                       <li class="mega-sub-menu-item">
@@ -120,8 +137,8 @@
                       </li>
                     </ul>
                   </li>
-                  <!--====== Menu item 'Colleges & research centers' ======-->
-                  <li class="megamenu-item ">
+                  <!--====== Menu item 'Colleges & research centers' - Only show Mobile ======-->
+                  <li class="d-xl-none megamenu-item ">
                     <a class="mega-menu-link" href="colleges.html" title="Colleges & research centers">Colleges & research centers</a>
                     
                   </li>
@@ -144,11 +161,11 @@
               </nav>
 
               <!--====== Header content _ Only show Mobile - Logo  & Social ======-->
-              <div class="d-lg-none hide-desktop">
+              <div class="d-xl-none hide-desktop"  style=" margin-top: auto; ">
                 <div class="d-flex static-content-mb">
                   <div class="left-content">
                     <a href="index.html" title="Home Page" class="logo">
-                      <img class="img-resposive logo-img" src="images/logo.png" alt="Logo" />
+                      <img class="img-responsive logo-img" src="images/logo.png" alt="Logo" />
                     </a>
                   </div>
                   <div class="right-content">
@@ -171,15 +188,15 @@
             </div>
             <!--====== Header right content _ Form Search ======-->
             <div class="header-search-wrap">
-              <div class="d-block d-lg-none btn-navbar">
+              <div class="d-block d-xl-none btn-navbar">
                 <button class="action show-menu">
                   <img class="icon" src="images/icons/tab-list.svg" />
                 </button>
               </div>
-              <div class="d-none d-lg-block search-form">
+              <div class="d-none d-xl-block search-form">
                 <form method="get" id="search-form" action="#">
                   <div role="search" class="head-form-search-wrap">
-                      <input id="header-search" type="text" value="" name="s" autocomplete="off">
+                      <input id="header-search" type="text" value="" name="s" placeholder="search .." autocomplete="off">
                       <button class="wpb_button btn-search" type="submit" id="td-header-search-top">Search</button>
                   </div>
               </form>
@@ -199,10 +216,10 @@
         <div class="footer-content">
           <div class="row">
             <!--====== Footer Content _ Logo & Infomation ======-->
-            <div class="col-12 col-lg-5">
+            <div class="col-12 col-sm-6 col-lg-5">
               <div class="logo">
                 <a href="index.html" title="Home Page" class="logo">
-                  <img class="img-resposive logo-img" src="images/logo.png" alt="Logo" />
+                  <img class="img-responsive logo-img" src="images/logo-white-vin.png" alt="Logo" />
                 </a>
               </div>
               <div class="row">
@@ -211,11 +228,23 @@
                     <span class="label">
                       Address:
                     </span>
-                    <p>
+                    <p class="address">
                       Entrepreneurship Lab, 1st floor, Building A, VinUniversity Campus, Vinhomes Ocean Park, Gia Lam, Ha Noi, Viet Nam
                     </p>
 
                   </div>
+                  <ul class="list-social">
+                    <li class="social">
+                      <a href="#" title="Facebook">
+                        <img src="images/icons/fb-transparent.png" alt="Facebook" />
+                      </a>
+                    </li>
+                    <li class="social">
+                      <a href="#" title="Instagram">
+                        <img src="images/icons/insta-transparent.png" alt="Instagram" />
+                      </a>
+                    </li>
+                  </ul>
                 </div>
                 <div class="col-12 col-lg-6">
                   <div class="text">
@@ -226,23 +255,12 @@
                       elab@vinuni.edu.vn
                     </a>
                   </div>
-                  <ul class="list-social">
-                    <li class="social">
-                      <a href="#" title="Facebook">
-                        <img src="images/icons/facebook.svg" alt="Facebook" />
-                      </a>
-                    </li>
-                    <li class="social">
-                      <a href="#" title="Instagram">
-                        <img src="images/icons/insta.svg" alt="Instagram" />
-                      </a>
-                    </li>
-                  </ul>
+                  
                 </div>
               </div>
             </div>
             <!--====== Footer Content _ List Link & Subcribe Form ======-->
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3">
               <div class="footer-list-link">
                   <ul class="list-link">
                     <li>
@@ -263,38 +281,51 @@
                   </ul>
               </div>
               <div class="footer-subcribe">
-                  <button class="btn btn-subcribe " id="btn-subcribe">
+                  <button class="btn btn-subcribe " id="btn-subcribe" data-bs-toggle="modal" data-bs-target="#subcribe-form-popup">
                     Subcribe
                   </button>
-                  <div id="subcribe-form-popup" class="subcribe-form-popup">
-                    <h3 class="title-popup">Subscribe Us</h3>
-                    <form method="post" id="subcribe-form" class="subcribe-form" action="#">
-                      <fieldset>
-                        <div class="field">
-                          <label class="d-none">
-                            name
-                          </label>
-                          <input id="name-subcribe" type="text" value="" name="name-subcribe" placeholder="Your Name ?">
+                  <div id="subcribe-form-popup" class="modal fade subcribe-form-popup">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
-                        <div class="field">
-                          <label class="d-none">
-                            email
-                          </label>
-                          <input id="email-subcribe" type="text" value="" name="email-subcribe" placeholder="Your Email ?">
-                        </div>
-                        <div class="field radio">
-                          <input type="radio" id="subscribe-posts" name="subscribe-type" value="subscribe-posts">
-                          <label for="subscribe-posts">Subscribe for posts</label><br>
-                        </div>
-                        <div class="field radio">
-                          <input type="radio" id="subscribe-events" name="subscribe-type" value="subscribe-events">
-                          <label for="subscribe-events">Subscribe for events</label><br>  
-                        </div>
-                      </fieldset>
-                      <button type="submit" class="btn btn-full btn-submit">
-                        Submit
-                      </button>
-                    </form>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          <h3 class="title-popup">Subscribe Us</h3>
+                            <form method="post" id="subcribe-form" class="subcribe-form" action="#">
+                              <fieldset>
+                                <div class="field">
+                                  <label class="d-none">
+                                    name
+                                  </label>
+                                  <input id="name-subcribe" type="text" value="" name="name-subcribe" placeholder="Your Name ?">
+                                </div>
+                                <div class="field">
+                                  <label class="d-none">
+                                    email
+                                  </label>
+                                  <input id="email-subcribe" type="text" value="" name="email-subcribe" placeholder="Your Email ?">
+                                </div>
+                                <div class="field radio">
+                                  <input type="radio" id="subscribe-posts" name="subscribe-type" value="subscribe-posts">
+                                  <label for="subscribe-posts">Subscribe for posts</label><br>
+                                </div>
+                                <div class="field radio">
+                                  <input type="radio" id="subscribe-events" name="subscribe-type" value="subscribe-events">
+                                  <label for="subscribe-events">Subscribe for events</label><br>  
+                                </div>
+                              </fieldset>
+                              <button type="submit" class="btn btn-full btn-submit">
+                                Submit
+                              </button>
+                            </form>
+                          </div>
+                      </div>
+                    </div>
                   </div>
               </div>
             </div>
@@ -319,7 +350,7 @@
                       <input id="organization" type="text" value="" name="organization" placeholder="Your organization?">
                     </div>
                     <div class="field textarea">
-                      <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message">
+                      <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message" >
                         </textarea>
 
                     </div>

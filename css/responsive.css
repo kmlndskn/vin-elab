@@ -1,0 +1,105 @@
+/**
+* Layout Responsive Header & Footer
+*/
+
+@media (min-width: 576px) {
+    footer {
+        padding: 50px 0;
+    }
+    footer .footer-list-link {
+        margin-top: 0;
+    }
+
+    footer .block-newsletter {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+    footer .footer-content div.logo , 
+    footer .footer-content  .footer-list-link {
+        margin-top: 50px;
+    }
+
+    .page-header {
+        padding: 0;
+    }
+
+    .page-header .header-wrappper .main-menu {
+        position: static;
+        height: auto;
+        display: block;
+        transform: inherit;
+        opacity: 1;
+        visibility: visible;
+        width: auto;
+        overflow: inherit;
+    }
+   
+    .page-header .header-wrappper .navbar-default {
+        margin-top: 0;
+        position: static;
+    }
+    
+    .page-header .header-wrappper  .megamenu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        position: static;
+    }
+    
+    .header-wrappper .megamenu .mega-menu-link {
+        border-top: 0;
+        padding: 43px 30px;
+        text-align: center;
+    }
+
+    .megamenu .megamenu-item:last-child {
+        border-bottom: none;
+    }
+
+    .page-header .megamenu .mega-sub-menu {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        z-index: 11;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 500ms;
+    }
+
+    .page-header .megamenu .megamenu-item:hover > .mega-sub-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
+
+/**
+* Home Page
+*/
+@media (max-width: 991px) {
+
+    .page-main {
+        padding-top: 80px;
+    }
+    .primary-banner .intro {
+        position: static;
+        padding: 32px 24px;
+    }
+    .primary-banner .intro .intro-title {
+        color: #010101 !important;
+        font-size: 26px;
+        line-height: 32px;
+    }
+}

@@ -1,0 +1,211 @@
+/**
+* Home Page
+*/
+
+.primary-banner {
+    position: relative;
+}
+
+.primary-banner .intro {
+    position: absolute;
+    bottom: 20%;
+    max-width: 570px;
+}
+
+.primary-banner  .intro .intro-title {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 15px;
+}
+
+.primary-banner .intro .btn {
+    width: 205px;
+}
+
+
+.block-blogs {
+    padding-top: 100px;
+    background-color: #e5e5e5;
+}
+
+.block-blogs .item.blog-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.block-blogs .blog-image {
+    order: 1;
+    flex: 0 0 67%;
+}
+
+.block-blogs .blog-content {
+    flex: 0 1 33%;
+    background: linear-gradient(221.72deg, #2D7BF4 1.48%, #1A3E76 99.58%);
+    border-radius: 8px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 23px 30px;
+}
+
+.block-blogs .blog-content .blog-actions {
+    margin-top: auto;
+}
+
+.block-blogs .blog-content .label-box {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    display: inline-block;
+}
+
+.block-blogs .blog-content .blog-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.block-blogs .blog-content .blog-text {
+    color: #fff;
+}
+
+
+.block-blogs .blog-content .text-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.block-blogs .blog-content .text-link .icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 24px;
+    margin-left: 8px;
+}
+
+.block-blogs .blog-content .text-link:hover {
+    color: #C72329;
+    padding: 4px 20px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.block-blogs .blog-content .text-link:hover .icon img {
+    fill: #C72329;
+    filter: brightness(50%) sepia(70) saturate(70) hue-rotate(25deg);
+}
+
+.blog-item.event .btn:not(.btn-white) {
+    padding: 16px 24px;
+}
+
+.blog-item.event .btn {
+    margin-right: 16px;
+}
+
+
+.owl-carousel.owl-theme .owl-nav button {
+    position: absolute;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 53px;
+    height: 53px;
+    display: inline-block;
+    background-image: url('../images/icons/left.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: -26px;
+    border-radius: 50%;
+}
+
+.owl-carousel.owl-theme .owl-nav button > span {
+    font-size: 0;
+}
+
+.owl-carousel.owl-theme .owl-nav button.owl-next {
+    background-image: url('../images/icons/right.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: auto;
+    right: -26px;
+}
+
+.owl-carousel.owl-theme .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-carousel.owl-theme .owl-dots button.owl-dot {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin: 0 4px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
+.owl-carousel.owl-theme .owl-dots button.owl-dot.active {
+    background-color: #C72329;
+}
+
+.block-blogs .hot-news .blog-content {
+    padding: 43px 50px;
+    order: 2;
+    background: linear-gradient(204.68deg, #FF6B6B 6.73%, #AC0C0C 94.1%);
+}
+
+.block-blogs .hot-news {
+    margin-top: 20px;
+}
+
+.our-mission {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 42px 26px;
+    margin-top: 35px;
+}
+.our-mission  .block-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #C72329;
+    margin-bottom: 15px;
+}
+
+.our-mission .list-mission {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.our-mission .label-order {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1A3E76;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.our-mission  .text {
+    font-weight: 400;
+    line-height: 21px;
+}
