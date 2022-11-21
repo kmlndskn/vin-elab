@@ -56,6 +56,47 @@
                 $("#blogs-slide").addClass('loaded');
             },
         });
+
+        
+        $("#involved-slide").owlCarousel({
+            items: 3,
+            loop: false,
+            nav: false,
+            dots: false,
+            autoplay: false,
+            margin: 20
+        });
+        
+        $("#partners-slide").owlCarousel({
+            items: 5,
+            loop: true,
+            nav: false,
+            dots: true,
+            autoplay: false
+        });
+
+        $("#teams-slide").owlCarousel({
+            loop: true,
+            nav: true,
+            dots: false,
+            autoplay: false,
+            margin: 20, 
+            responsive:{
+                0:{
+                    items:1.5
+                },
+                575:{
+                    items:2.5
+                },
+                
+                1000:{
+                    items:3.5
+                },
+                1200:{
+                    items:4.5
+                }
+            }
+        });
     });
 
 
