@@ -60,19 +60,49 @@
         
         $("#involved-slide").owlCarousel({
             items: 3,
-            loop: false,
+            loop: true,
             nav: false,
             dots: false,
             autoplay: false,
-            margin: 20
+            margin: 20,
+            responsive:{
+                0:{
+                    items:1.5
+                },
+                767:{
+                    items:2.5
+                },
+                
+                1000:{
+                    items:3
+                }
+            }
         });
         
         $("#partners-slide").owlCarousel({
             items: 5,
             loop: true,
             nav: false,
-            dots: true,
-            autoplay: false
+            dots: false,
+            autoplay: false,
+            margin: 20,
+            responsive:{
+                0:{
+                    items:1.5
+                },
+                767:{
+                    items:2.5
+                },
+                
+                1000:{
+                    items:3.5,
+                    nav: true
+                },
+                1200:{
+                    items:4.5,
+                    nav: true
+                }
+            }
         });
 
         $("#teams-slide").owlCarousel({
@@ -85,7 +115,7 @@
                 0:{
                     items:1.5
                 },
-                575:{
+                767:{
                     items:2.5
                 },
                 
@@ -97,7 +127,67 @@
                 }
             }
         });
+
+        // block teams
+
+        let $spaceLeft = $(".block-teams .block-title .heading ").offset().left;
+
+        $(".block-teams .block-content, .block-somethings .block-content.only-show-mobile, .block-involved > .block-content, .block-partners > .block-content").css({
+            "padding-left": $spaceLeft,
+        });
+
+        // Component Somethings
+        let $heightItem = $(".block-somethings .only-show-desktop .line").height();
+        $( ".block-somethings .only-show-desktop .line > .item" ).each(function( index ) {
+            if($(this).hasClass('active')) {  
+                $(this).css({
+                    "width": "calc( ( 100% - 40px ) * 0.4 )",
+                    "height": $heightItem
+                });
+            } else {
+                $(this).css({
+                    "width": "calc( ( 100% - 40px ) / 3 )",
+                    "height": $heightItem
+                });
+            }
+        });
+
+        $(".block-somethings .block-content .owl-carousel").owlCarousel({
+            loop: true,
+            nav: false,
+            dots: false,
+            autoplay: false,
+            margin: 20, 
+            responsive:{
+                0:{
+                    items:1.5
+                },
+                767:{
+                    items:2.5
+                },
+                
+                1000:{
+                    items:3.5
+                }
+            }
+        });
+
     });
+
+    $(document).on('mouseover','.block-somethings .only-show-desktop .line > .item',function(e){
+        if(!$(this).hasClass('active')) {  
+            $(this).parent().find("> .active").removeClass('active');
+            $(this).addClass('active');
+            $(this).parent().find("> .item").css({
+                'width':"calc( ( 100% - 40px ) * 0.3 )",                
+            });  
+            $(this).css({
+                'width':"calc( ( 100% - 40px ) * 0.4 )",           
+            });  
+        };
+    });
+
+
 
 
 })(jQuery);

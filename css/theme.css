@@ -222,8 +222,9 @@
 
 .block-involved  .item {
     position: relative;
+    border-radius: 8px;
+    overflow: hidden;
 }
-
 
 .block-involved .item .content {
     position: absolute;
@@ -261,4 +262,176 @@
     color: #C72329;
     display: block;
     margin-bottom: 20px;
+}
+
+.section.block-teams {
+    padding: 60px 0;
+    background-color: #E5E5E5;
+}
+
+.block-teams .item .image {
+    background-color: #FFFFFF;
+    border-radius: 4.99104px;
+    padding: 25px 15px;
+}
+
+.block-teams .item .content {
+    margin-top: 15px;
+}
+
+.block-teams .item .content .title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1A3E76;
+    margin-bottom: 20px;
+}
+
+.block-teams .item .content .text {
+    color: #000;
+}
+
+.block-teams .item .content .infor-ceo {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.block-teams  .infor-ceo .avatar {
+    width: 80px;
+    height: 80px;
+}
+
+.block-teams .infor-ceo .infor .name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #1A3E76;
+}
+
+.block-teams .infor-ceo .infor {
+    color: #1A3E76;
+}
+
+.block-teams  .infor-ceo .link-social {
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    gap: 10px;
+    font-size: 14px;
+    color: #1A3E76;
+}
+
+.block-teams .block-content {
+    overflow: hidden;
+}
+.block-teams .owl-carousel.owl-theme .owl-nav button.owl-next {
+    display: none;
+}
+
+.block-teams .owl-carousel.owl-theme .owl-nav button.owl-prev {
+    left: -100px;
+}
+
+.section.block-partners {
+    padding: 70px 0;
+}
+
+.block-partners  .partners {
+    flex-direction: column;
+}
+
+.block-partners .partner-image {
+    background-color: #FFFFFF;
+    border-radius: 6.34666px;
+    padding: 19px;
+}
+
+.section.block-involved {
+    padding: 80px 0;
+}
+
+.section.block-somethings {
+    padding: 80px 0;
+    background-color: #e5e5e5;
+}
+
+.block-somethings .item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 500ms;
+}
+
+.block-somethings .item-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 25px 30px;
+    opacity: 0;
+    visibility: hidden;
+    background: linear-gradient(0deg, rgba(26, 62, 118, 0.9), rgba(26, 62, 118, 0.9));
+    transition: all 300ms;
+}
+
+.block-somethings  .line {
+    gap: 20px;
+}
+
+.block-somethings .line + .line {
+    margin-top: 20px;
+}
+
+.block-somethings .item .title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 25px 30px;
+    transition: all 300ms;
+}
+
+.block-somethings .item.active .title {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.block-somethings .item.active .item-content {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+.block-somethings .item .sub-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    display: block;
+}
+
+.block-somethings .item .name {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 32px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.block-somethings .item .item-image {
+    height: 100%;
+}
+
+.block-somethings .item .item-image img {
+    width: 100%;
+    height: 100%;
 }
