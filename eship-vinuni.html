@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--[if IE
+      ]><meta http-equiv="X-UA-Compatible" content="IE=edge"
+    /><![endif]-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link href="images/favicon.png" rel="shortcut icon" />
+    <title> Vin-Elab</title>
+
+    <!--====== Google Font ======-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--====== Vendor Css ======-->
+    <link rel="stylesheet" href="css/vendor.css" />
+    <!--====== import Slick Css ======-->
+    <link rel="stylesheet" href="css/slick.css" />
+
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    
+  </head>
+
+  <body>
+    <!--====== Main Header ======-->
+    <header class="page-header">
+
+        <div class="container">
+          <div class="header-wrappper">
+            <!--====== Header left content _ Logo ======-->
+            <div class="header-left-content">
+              <a href="index.html" title="Home Page" class="logo">
+                <img class="img-responsive logo-img" src="images/logo.png" alt="Logo" />
+              </a>
+            </div>
+            <!--====== Header center content _ Main Menu ======-->
+            <div class="main-menu">
+              <!--====== Header content _ Only show Mobile - Form search ======-->
+              <div class="d-xl-none hide-desktop">
+                <div class="button">
+                  <button class="action close-menu">
+                    <img src="images/icons/x-circle.svg" />
+                  </button>
+                </div>
+                <div class="search-form-mb">
+                  <form method="get" id="search-form-mb" action="#">
+                    <div role="search" class="head-form-search-wrap">
+                        <input id="header-search" type="text" value="" name="s" placeholder="Search .." autocomplete="off">
+                        <button class="wpb_button btn-search" type="submit" id="td-header-search-top">Search</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!--====== Header content _ Menu ======-->
+              <nav id="site-navigation" class="navbar navbar-default" role="navigation">
+                <!--====== Main Menu content ======-->
+                <ul class="megamenu ">
+                  <!--====== Menu item 'About' ======-->
+                  <li class="megamenu-item megamenu-item-has-children">
+                    <a class="mega-menu-link" href="about.html" title="About">About</a>
+                    <ul class="mega-sub-menu" >
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="overview.html" title="Overview">Overview</a>
+                      </li>
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="physical-space.html" title="PHYSICAL">PHYSICAL SPACE</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--====== Menu item 'WHAT WE DO' ======-->
+                  <li class="megamenu-item megamenu-item-has-children">
+                    <a class="mega-menu-link" href="about.html" title="WHAT WE DO">WHAT WE DO</a>
+                    <ul class="mega-sub-menu" >
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="incubation.html" title="INCUBATION">INCUBATION</a>
+                      </li>
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="start-up-mentorship.html" title="Start-up Mentorship">Start-up Mentorship</a>
+                      </li>
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="start-up-internship.html" title="Start-up INTERNSHIP">START-UP INTERNSHIP</a>
+                      </li>
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="workshops-seminars.html" title="WORKSHOPS & SEMINARS">WORKSHOPS & SEMINARS</a>
+                      </li>
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="hackathon.html" title="HACKATHON">HACKATHON</a>
+                      </li>
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="start-up-series.html" title="STARTUP COMMUNITY SERIES">STARTUP COMMUNITY SERIES</a>
+                      </li>
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="competition.html" title="Competition">Competition</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!--====== Menu item 'NEWS & Media' - Only show Desktop ======-->
+                  <li class="d-none d-xl-block megamenu-item megamenu-item-has-children">
+                    <a class="mega-menu-link" href="news-resources.html" title="NEWS & Media">NEWS & Media</a>
+                    <ul class="mega-sub-menu" >
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="news.html" title="NEWS">NEWS</a>
+                      </li>
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="resources.html" title="RESOURCES">RESOURCES</a>
+                      </li>
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="event-calendar.html" title="EVENT CALENDAR">EVENT CALENDAR</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--====== Menu item 'NEWS & RESOURCES' - Only show Mobile ======-->
+                  <li class="d-xl-none  megamenu-item megamenu-item-has-children">
+                    <a class="mega-menu-link" href="news-resources.html" title="NEWS & RESOURCES">NEWS & RESOURCES</a>
+                    <ul class="mega-sub-menu" >
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="news.html" title="NEWS">NEWS</a>
+                      </li>
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="resources.html" title="RESOURCES">RESOURCES</a>
+                      </li>
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="event-calendar.html" title="EVENT CALENDAR">EVENT CALENDAR</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--====== Menu item 'Colleges & research centers' - Only show Mobile ======-->
+                  <li class="d-xl-none megamenu-item ">
+                    <a class="mega-menu-link" href="colleges.html" title="Colleges & research centers">Colleges & research centers</a>
+                    
+                  </li>
+                  <!--====== Menu item 'GET INVOLVED' ======-->
+                  <li class="megamenu-item megamenu-item-has-children">
+                    <a class="mega-menu-link" href="get-involved.html" title="GET INVOLVED">GET INVOLVED</a>
+                    <ul class="mega-sub-menu" >
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="students.html" title="STUDENTS">STUDENTS</a>
+                      </li>
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="faculty-staff.html" title="FACULTY & STAFF">FACULTY & STAFF</a>
+                      </li>
+                      <li class="mega-sub-menu-item">
+                        <a class="mega-sub-menu-link" href="partners-mentors.html" title=" INDUSTRY PARTNERS & MENTORS"> INDUSTRY PARTNERS & MENTORS</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+
+              <!--====== Header content _ Only show Mobile - Logo  & Social ======-->
+              <div class="d-xl-none hide-desktop"  style=" margin-top: auto; ">
+                <div class="d-flex static-content-mb">
+                  <div class="left-content">
+                    <a href="index.html" title="Home Page" class="logo">
+                      <img class="img-responsive logo-img" src="images/logo.png" alt="Logo" />
+                    </a>
+                  </div>
+                  <div class="right-content">
+                    <ul class="list-social">
+                      <li class="social">
+                        <a href="#" title="Facebook">
+                          <img src="images/icons/facebook.svg" alt="Facebook" />
+                        </a>
+                      </li>
+                      <li class="social">
+                        <a href="#" title="Instagram">
+                          <img src="images/icons/insta.svg" alt="Instagram" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!--====== Header right content _ Form Search ======-->
+            <div class="header-search-wrap">
+              <div class="d-block d-xl-none btn-navbar">
+                <button class="action show-menu">
+                  <img class="icon" src="images/icons/tab-list.svg" />
+                </button>
+              </div>
+              <div class="d-none d-xl-block search-form">
+                <form method="get" id="search-form" action="#">
+                  <div role="search" class="head-form-search-wrap">
+                      <input id="header-search" type="text" value="" name="s" placeholder="search .." autocomplete="off">
+                      <button class="wpb_button btn-search" type="submit" id="td-header-search-top">Search</button>
+                  </div>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <!--====== Main Content ======-->
+    <main id="maincontent" class="page-main" style=" background-color: #e5e5e5;">
+      <div class="page-title-wrapper">
+        <div class="page-title-image">
+          <img class="img-responsive" src="images/big-banner-eship-page.png" alt="image" />
+        </div>
+        <div class="container">
+          <div class="page-title-content">
+            <h3 class="title quote">
+              “Everyone is an entrepreneur at heart!"
+            </h3>
+            <h5 class="sub-title name vin-red">
+              Dr Giang T. Phi
+            </h5>
+            <p class="sub-text">
+              Academic Director of Entrepreneurship Lab
+            </p>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="section block-our-mission transform-top-85">
+        <div class="container">
+          <div class="our-mission">
+            <h3 class="block-title">OUR MISSION</h3>
+            <div class="flex list-mission">
+              <div class="item">
+                <span class="label-order">
+                  1
+                </span>
+                <p class="text">
+                  Nurture and develop students’ and faculty/staff’s entrepreneurial pursuits, mindsets and skills
+                </p>
+              </div>
+              <div class="item">
+                <span class="label-order">
+                  2
+                </span>
+                <p class="text">
+                  Inspire and empower entrepreneurs of all kinds, including the creation and development of impactful startups at VinUniversity
+                </p>
+              </div>
+              <div class="item">
+                <span class="label-order">
+                  3
+                </span>
+                <p class="text">
+                  Connect and position VinUniversity as the leading entrepreneurship education hub in Vietnam and the South-east Asian region.
+                </p>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section block-entrepreneurship">
+        
+        <div class="container">
+          <div class="block-title">
+            <h3 class="heading vin-red">ENTREPRENEURSHIP @ VINUNIVERSITY & GRADUATE ATTRIBUTES</h3>
+          </div>
+          <div class="block-content">
+            <div class="row">
+              <div class="col-12">
+                <div class="item big-item">
+                  <div class="image">
+                    <img class="img-responsive" src="images/big-r17.png" alt="image" />
+                  </div>
+                  <div class="content text-white">
+                    <h4 class="title">
+                      Core Value: EXCELLENCE
+                    </h4>
+                    <h4 class="description">
+                      University of excellence, developing talents for the future
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="item content-bgr-vin-blue content-left">
+                  <div class="content text-white ">
+                    <h4 class="title">
+                      Core Value: EXCELLENCE
+                    </h4>
+                    <h4 class="description">
+                      University of excellence, developing talents for the future
+                    </h4>
+                  </div>
+                  <div class="image">
+                    <img class="img-responsive" src="images/entrepreneurship-1.png" alt="image" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="item">
+                  <div class="content">
+                    <h4 class="title">
+                      Core Value: EXCELLENCE
+                    </h4>
+                    <h4 class="description">
+                      University of excellence, developing talents for the future
+                    </h4>
+                  </div>
+                  <div class="image">
+                    <img class="img-responsive" src="images/entrepreneurship-6.png" alt="image" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="item content-bgr-vin-blue">
+                  <div class="content text-white ">
+                    <h4 class="title">
+                      Core Value: EXCELLENCE
+                    </h4>
+                    <h4 class="description">
+                      University of excellence, developing talents for the future
+                    </h4>
+                  </div>
+                  <div class="image">
+                    <img class="img-responsive" src="images/entrepreneurship-2.png" alt="image" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="item content-left">
+                  <div class="content ">
+                    <h4 class="title">
+                      Core Value: EXCELLENCE
+                    </h4>
+                    <h4 class="description">
+                      University of excellence, developing talents for the future
+                    </h4>
+                  </div>
+                  <div class="image">
+                    <img class="img-responsive" src="images/entrepreneurship-3.png" alt="image" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="item content-bgr-vin-blue content-left">
+                  <div class="content text-white ">
+                    <h4 class="title">
+                      Core Value: EXCELLENCE
+                    </h4>
+                    <h4 class="description">
+                      University of excellence, developing talents for the future
+                    </h4>
+                  </div>
+                  <div class="image">
+                    <img class="img-responsive" src="images/entrepreneurship-4.png" alt="image" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="item">
+                  <div class="content">
+                    <h4 class="title">
+                      Core Value: EXCELLENCE
+                    </h4>
+                    <h4 class="description">
+                      University of excellence, developing talents for the future
+                    </h4>
+                  </div>
+                  <div class="image">
+                    <img class="img-responsive" src="images/entrepreneurship-1.png" alt="image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section block-eship-detail brg-white">
+        <div class="container">
+          <div class="content">
+            <p>Given the comprehensiveness of entrepreneurship mindset and skills, E@V framework can simultaneously support the development of all five VinUni graduate attributes.
+            </p>
+            <p>
+              In particular, through the E@V framework, we expect VinUniversity Graduates to have:
+            </p>
+            <ul >
+              <li>
+                The entrepreneurial mindset to recognize opportunities at local, regional, and global levels;
+              </li>
+              <li>
+                The entrepreneurial skills to empathize and evaluate customer needs with respect to economic and/or social impact;
+              </li>
+              <li>
+                The cooperative and leader mindset to work with multidisciplinary partners to develop creative solutions to unmet customer needs and other problems including social issues;
+              </li>
+              <li>
+                The entrepreneurial discipline to execute solutions for maximum impact.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="section block-entrepreneurship-journey">
+        <div class="container">
+          <div class="block-title">
+            <h3 class="heading vin-red">ENTREPRENEURSHIP @ VINUNIVERSITY & GRADUATE ATTRIBUTES</h3>
+          </div>
+          <div class="block-content ">
+            <div class="side-pathway">
+              <ul class="list-path">
+                <li>
+                  <h4 class="title">
+                    start
+                  </h4>
+                  <p>
+                    Nurture and develop students' and faculty/staff's entrepreneurial pursuits, mindsets and skills
+                  </p>
+                </li>
+                <li>
+                  <h4 class="title">
+                    Agile Innovation
+                  </h4>
+                  <p>
+                    Nurture and develop students' and faculty/staff's entrepreneurial pursuits, mindsets and skills
+                  </p>
+                </li>
+                <li>
+                  <h4 class="title">
+                    Self- Selected voluntary activities
+                  </h4>
+                </li>
+                <li>
+                  <h4 class="title">
+                    3 entrepreneurship pathways
+                  </h4>
+                </li>
+              </ul>
+            </div>
+            <div class="content">
+              <div class="row">
+                <div class="col-6 col-md-4">
+                  <div class="item">
+                    <a class="link" href="#" title="link">
+                      <img class="img-responsive" alt="image" src="images/journey-1.png"/>
+                    </a>
+                    <a class="btn btn-download" href="#" title="Download File">
+                      Download pdf
+                    </a> 
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="item">
+                    <a class="link" href="#" title="link">
+                      <img class="img-responsive" alt="image" src="images/journey-2.png"/>
+                    </a>
+                    <a class="btn btn-download" href="#" title="Download File">
+                      Download pdf
+                    </a> 
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="item">
+                    <a class="link" href="#" title="link">
+                      <img class="img-responsive" alt="image" src="images/journey-3.png"/>
+                    </a>
+                    <a class="btn btn-download" href="#" title="Download File">
+                      Download pdf
+                    </a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!--====== Main Footer ======-->
+    <footer id="footer">
+      <div class="container">
+        <!--====== Footer Content ======-->
+        <div class="footer-content">
+          <div class="row">
+            <!--====== Footer Content _ Logo & Infomation ======-->
+            <div class="col-12 col-sm-6 col-lg-5">
+              <div class="logo">
+                <a href="index.html" title="Home Page" class="logo">
+                  <img class="img-responsive logo-img" src="images/logo-white-vin.png" alt="Logo" />
+                </a>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="text">
+                    <span class="label">
+                      Address:
+                    </span>
+                    <p class="address">
+                      Entrepreneurship Lab, 1st floor, Building A, VinUniversity Campus, Vinhomes Ocean Park, Gia Lam, Ha Noi, Viet Nam
+                    </p>
+
+                  </div>
+                  <ul class="list-social">
+                    <li class="social">
+                      <a href="#" title="Facebook">
+                        <img src="images/icons/fb-transparent.png" alt="Facebook" />
+                      </a>
+                    </li>
+                    <li class="social">
+                      <a href="#" title="Instagram">
+                        <img src="images/icons/insta-transparent.png" alt="Instagram" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="text">
+                    <span class="label">
+                      Email:
+                    </span>
+                    <a class="link-email" href="mailTo:elab@vinuni.edu" title="elab@vinuni.edu">
+                      elab@vinuni.edu.vn
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <!--====== Footer Content _ List Link & Subcribe Form ======-->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="footer-list-link">
+                  <ul class="list-link">
+                    <li>
+                      <a href="#" title="Join our events">
+                        Join our events
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" title="Meet a mentor">
+                        Meet a mentor
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" title="Get involved">
+                        Get involved
+                      </a>
+                    </li>
+                  </ul>
+              </div>
+              <div class="footer-subcribe">
+                  <button class="btn btn-subcribe " id="btn-subcribe" data-bs-toggle="modal" data-bs-target="#subcribe-form-popup">
+                    Subcribe
+                  </button>
+                  <div id="subcribe-form-popup" class="modal fade subcribe-form-popup">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          <h3 class="title-popup">Subscribe Us</h3>
+                            <form method="post" id="subcribe-form" class="subcribe-form" action="#">
+                              <fieldset>
+                                <div class="field">
+                                  <label class="d-none">
+                                    name
+                                  </label>
+                                  <input id="name-subcribe" type="text" value="" name="name-subcribe" placeholder="Your Name ?">
+                                </div>
+                                <div class="field">
+                                  <label class="d-none">
+                                    email
+                                  </label>
+                                  <input id="email-subcribe" type="text" value="" name="email-subcribe" placeholder="Your Email ?">
+                                </div>
+                                <div class="field radio">
+                                  <input type="radio" id="subscribe-posts" name="subscribe-type" value="subscribe-posts">
+                                  <label for="subscribe-posts">Subscribe for posts</label><br>
+                                </div>
+                                <div class="field radio">
+                                  <input type="radio" id="subscribe-events" name="subscribe-type" value="subscribe-events">
+                                  <label for="subscribe-events">Subscribe for events</label><br>  
+                                </div>
+                              </fieldset>
+                              <button type="submit" class="btn btn-full btn-submit">
+                                Submit
+                              </button>
+                            </form>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!--====== Footer Content _ Newsletter Form ======-->
+            <div class="col-12 col-lg-4">
+              <div class="block-newsletter">
+                <h4 class="block-title">
+                  Get in touch
+                </h4>
+                <form method="post" id="search-form" action="#">
+                  <fieldset>
+                    <div class="field">
+                      <label class="d-none">
+                        name
+                      </label>
+                      <input id="name" type="text" value="" name="name" placeholder="Your Name ?">
+                    </div>
+                    <div class="field">
+                      <label class="d-none">
+                        organization
+                      </label>
+                      <input id="organization" type="text" value="" name="organization" placeholder="Your organization?">
+                    </div>
+                    <div class="field textarea">
+                      <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message" >
+                        </textarea>
+
+                    </div>
+                  </fieldset>
+                  <button type="submit" class="btn btn-full btn-submit">
+                    Submit
+                  </button>
+                </form>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--====== Vendor Js ======-->
+    <script src="js/vendor.js"></script>
+    <!--====== import Slick Js ======-->
+    <script src="js/slick.min.js"></script>
+    <!--====== import Theme Js ======-->
+    <script src="js/theme.js"></script>
+
+    <!--====== Noscript ======-->
+    <noscript>
+      <div class="app-setting">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="app-setting__wrap">
+                <h1 class="app-setting__h1">
+                  JavaScript is disabled in your browser.
+                </h1>
+
+                <span class="app-setting__text"
+                  >Please enable JavaScript in your browser or upgrade to a
+                  JavaScript-capable browser.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </noscript>
+  </body>
+</html>

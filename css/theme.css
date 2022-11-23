@@ -435,3 +435,191 @@
     width: 100%;
     height: 100%;
 }
+
+.page-title-wrapper {
+    padding-top: 110px;
+    background-color: #DDE6FE;
+    position: relative;
+}
+
+.page-title-wrapper .page-title-content {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    max-width: 505px;
+    padding: 60px;
+}
+
+.page-title-wrapper .page-title-content .title  {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 10px;
+}
+
+.page-title-wrapper .page-title-content  .sub-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 10px;
+}
+
+.transform-top-85 {
+    transform: translateY(-85px);
+}
+
+.block-our-mission .our-mission {
+    margin-top: 0;
+    padding: 24px 24px 50px;
+}
+
+.block-our-mission .our-mission .block-title {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.block-entrepreneurship .row {
+    margin: 0 -4px;
+}
+
+.block-entrepreneurship .row > div {
+    padding: 0 4px;
+}
+.block-entrepreneurship .block-content .item {
+    display: flex;
+    gap: 8px;
+    
+
+}
+.block-entrepreneurship .item .image img {
+    border-radius: 8px;
+    width: 100%;
+}
+.block-entrepreneurship .item .image {
+    margin-top: 8px;
+    flex: 0 0 calc(50% - 4px);
+}
+.block-entrepreneurship .item .content {
+    flex: 0 0 calc(50% - 4px);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.block-entrepreneurship .item .content .title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.block-entrepreneurship .item .content .description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.block-entrepreneurship .item:not(.content-left) .content {
+    order: 2;
+}
+.block-entrepreneurship .item.content-bgr-vin-blue .content {
+    background: #1A3E76;
+}
+.block-entrepreneurship .block-content .item.big-item {
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    display: block;
+}
+.block-entrepreneurship .item.big-item .image img {
+    width: 100%;
+}
+.block-entrepreneurship .item.big-item .content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: rgba(26, 62, 118, 0.76);
+    border-radius: 8px;
+    padding: 45px;
+}
+
+.block-entrepreneurship .item.big-item .content h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.section.block-eship-detail.brg-white {
+    background: #FFFFFF;
+    padding: 60px 0;
+}
+
+.block-eship-detail .content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.block-eship-detail .content p {
+    margin-bottom: 15px;
+}
+
+.block-eship-detail .content ul {
+    padding-left: 16px;
+}
+
+.block-eship-detail .content ul li {
+    list-style: disc;
+}
+
+.section.block-entrepreneurship, .section.block-entrepreneurship-journey {
+    padding: 60px 0;
+}
+.side-pathway .list-path {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.side-pathway .list-path:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    height: 1px;
+    background-color: #C72329;
+}
+
+.side-pathway .list-path li {
+    margin-top: 24px;
+}
+
+.side-pathway .list-path li:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #C72329;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+.side-pathway .list-path .title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.block-entrepreneurship-journey .content .item  img {
+    width: 100%;
+}
+
+.block-entrepreneurship-journey .content .item .btn-download {
+    margin-top: 24px;
+}

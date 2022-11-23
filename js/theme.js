@@ -132,7 +132,7 @@
 
         let $spaceLeft = $(".block-teams .block-title .heading ").offset().left;
 
-        $(".block-teams .block-content, .block-somethings .block-content.only-show-mobile, .block-involved > .block-content, .block-partners > .block-content").css({
+        $(".block-slide-stage-right  .block-content").css({
             "padding-left": $spaceLeft,
         });
 
