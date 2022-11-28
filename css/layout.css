@@ -48,6 +48,8 @@ body {
     line-height: 1.5;
     font-size: 1rem;
     -webkit-font-smoothing: antialiased;
+    background-color: #E5E5E5;
+    padding-top: 110px;
 }
 
 body.has-fixed-header {

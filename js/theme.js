@@ -106,6 +106,7 @@
         });
 
         $("#teams-slide").owlCarousel({
+            items: 5,
             loop: true,
             nav: true,
             dots: false,
@@ -127,6 +128,33 @@
                 }
             }
         });
+
+        $("#teams-slide-incubator").owlCarousel({
+            items: 4,
+            loop: false,
+            nav: true,
+            dots: false,
+            autoplay: false,
+            margin: 20, 
+            responsive:{
+                0:{
+                    items:1
+                },
+                767:{
+                    items:2
+                },
+                
+                1000:{
+                    items:23
+                },
+                1200:{
+                    items:4
+                }
+            }
+        });
+
+
+        
 
         // block teams
 

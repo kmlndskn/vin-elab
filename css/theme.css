@@ -623,3 +623,143 @@
 .block-entrepreneurship-journey .content .item .btn-download {
     margin-top: 24px;
 }
+
+.page-banner {
+    margin-top: 34px;
+}
+.page-banner .banner-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+.breadcrumbs {
+    margin-top: 32px;
+}
+
+.breadcrumbs .items {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs .items a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+}
+.breadcrumbs .items li + li:before {
+    content: "/";
+    margin: 0 5px 0 8px;
+    font-size: 14px;
+}
+
+.breadcrumbs .items strong {
+    font-size: 14px;
+}
+.block-infor-page {
+    margin-top: 30px;
+}
+
+.block-infor-page .page-name {
+    font-weight: 300;
+    font-size: 32px;
+    margin-bottom: 10px;
+    line-height: 39px;
+    color: #C72329;
+}
+
+.block-infor-page  .infor p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #010101;
+}
+
+.block-infor-page .infor {
+    margin-bottom: 45px;
+}
+
+.programs {
+    display: flex;
+    gap: 15px;
+}
+
+.programs .item {
+    background: #FFFFFF;
+    border-radius: 6.54424px;
+    flex: 0 0 calc( (100% - 30px ) / 3);
+    padding: 40px;
+    text-align: center;
+}
+
+.programs .item .title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+.block-news .block-content {
+    background: #FFFFFF;
+border-radius: 16px;
+padding: 16px;
+}
+
+.block-news .new-item.first {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.block-news .new-item.first .content {
+    position: absolute;
+    background: linear-gradient(180deg, #000000 11.08%, rgba(53, 53, 53, 0) 93.89%);
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+}
+.block-news .new-item:not(.first) {
+    display: flex;
+}
+.block-news .new-item.first .new-name {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+.block-news .new-item .image img {
+    width: 100%;
+}
+
+.block-news .new-item:not(.first) .image {
+    flex: 0 0 37.5%;
+}
+
+.block-news .new-item:not(.first) .content {
+    flex: 0 0 62.5%;
+    padding-left: 16px;
+}
+
+.block-news .new-item + .new-item {
+    padding-top: 16px;
+    margin-top: 16px;
+    border-top: 1px solid #D9D9D9;
+}
+
+.block-news .new-item:not(.first) .new-name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.block-news .new-item .link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #1A3E76;
+}
