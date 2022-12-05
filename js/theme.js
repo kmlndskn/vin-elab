@@ -95,11 +95,11 @@
                 },
                 
                 1000:{
-                    items:3.5,
+                    items:3,
                     nav: true
                 },
                 1200:{
-                    items:4.5,
+                    items:5,
                     nav: true
                 }
             }
@@ -117,19 +117,43 @@
                     items:1.5
                 },
                 767:{
-                    items:2.5
+                    items:2
                 },
                 
                 1000:{
-                    items:3.5
+                    items:3
                 },
                 1200:{
-                    items:4.5
+                    items:4
                 }
             }
         });
 
-        $("#teams-slide-incubator").owlCarousel({
+        $("#teams-slide-incubator, #involved-overview-slide").owlCarousel({
+            items: 4,
+            loop: false,
+            nav: true,
+            dots: false,
+            autoplay: false,
+            margin: 20, 
+            responsive:{
+                0:{
+                    items:1.2
+                },
+                767:{
+                    items:2.3
+                },
+                
+                1000:{
+                    items:3
+                },
+                1200:{
+                    items:4
+                }
+            }
+        });
+
+        $("#mentors-slide").owlCarousel({
             items: 4,
             loop: false,
             nav: true,
@@ -143,15 +167,32 @@
                 767:{
                     items:2
                 },
-                
-                1000:{
-                    items:23
-                },
                 1200:{
-                    items:4
+                    items:3
                 }
             }
         });
+
+        $("#our-team-slide, #students-slide").owlCarousel({
+            items: 3,
+            loop: false,
+            nav: false,
+            dots: false,
+            autoplay: false,
+            margin: 20, 
+            responsive:{
+                0:{
+                    items:1.5
+                },
+                767:{
+                    items:2
+                },
+                1200:{
+                    items:3
+                }
+            }
+        });
+
 
 
         
@@ -215,7 +256,76 @@
         };
     });
 
+    /*JS for vertical thumbnail slide */
 
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: false,
+        asNavFor: '.slider-nav',
+        arrows: true,
+        prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button">Previous</button>',
+        nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button">Next</button>',
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 4.5,
+        slidesToScroll: 1,
+        vertical:true,
+        asNavFor: '.slider-for',
+        dots: false,
+        focusOnSelect: true,
+        verticalSwiping:true,
+        responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+              vertical: false,
+            }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            vertical: false,
+          }
+        },
+        {
+          breakpoint: 580,
+          settings: {
+            vertical: false,
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 380,
+          settings: {
+            vertical: false,
+            slidesToShow: 2,
+          }
+        }
+        ]
+    });
+
+    $("#competition-slide").owlCarousel({
+        items:3,
+        loop: true,
+        nav: false,
+        dots: false,
+        autoplay: false,
+        margin: 20, 
+        responsive:{
+            0:{
+                items:1.5
+            },
+            767:{
+                items:2.5
+            },
+            
+            1000:{
+                items:3
+            }
+        }
+    });
 
 
 })(jQuery);

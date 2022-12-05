@@ -59,15 +59,15 @@ body.has-fixed-header.has-product-toolbar {
     padding-top: 200px;
 }
 
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
     .page-main .container, 
     .page-main .container-lg, 
     .page-main .container-md, 
     .page-main .container-sm, 
     .page-main  .container-xl {
-        max-width: 1210px;
+        max-width: 1215px;
     }
-} */
+}
 
 /**
  * Basic styles for headings and paragraph
@@ -221,6 +221,35 @@ a:focus,
 
 .btn-full {
     width: 100%;
+}
+
+.link-arrow {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.link-arrow::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/icons/arrow-right.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 8px;
+    transform: translateY(6px);
+
+}
+
+.link-arrow.color-red {
+    color: #C72329;
+}
+
+.link-arrow.color-red::after {
+    background-image: url('../images/icons/arrow-right-red.svg');
 }
 
 /**
@@ -388,8 +417,8 @@ body {
 
 .navbar .megamenu .mega-menu-link {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 19px;
     color: #010101;
     text-transform: uppercase;
     padding: 25px 10px;
@@ -408,8 +437,8 @@ body {
 .megamenu .mega-sub-menu .mega-sub-menu-link {
     color: #fff;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
     padding: 10px 16px;
     display: block;
     text-transform: uppercase;
@@ -549,9 +578,6 @@ footer .footer-content a {
     margin-left: 16px;
 }
 
-.footer-content .address {
-    text-decoration: underline;
-}
 
 .footer-list-link .list-link a {
     font-weight: 700;

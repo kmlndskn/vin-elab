@@ -38,6 +38,10 @@
         padding: 0;
     }
 
+    .page-header  .header-left-content {
+        width: 207px;
+    }
+
     .page-header .header-wrappper .main-menu {
         position: static;
         height: auto;
@@ -64,7 +68,7 @@
     
     .header-wrappper .megamenu .mega-menu-link {
         border-top: 0;
-        padding: 43px 30px;
+        padding: 46px 20px;
         text-align: center;
     }
 
@@ -73,29 +77,33 @@
     }
 
     .page-header .megamenu .mega-sub-menu {
-        display: flex !important;
         align-items: center;
-        justify-content: center;
+        padding: 24px 74px;
         z-index: 11;
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
-        opacity: 0;
+        display: none;
         visibility: hidden;
-        transition: all 500ms;
+        transition: all 200ms;
+        justify-content: center;
+    }
+    .page-header .megamenu .mega-sub-menu.full-width {
+        justify-content: space-between;
     }
 
     .page-header .megamenu .megamenu-item:hover > .mega-sub-menu {
         opacity: 1;
         visibility: visible;
+        display: flex;
     }
 
     .block-involved .item .content {
         padding: 30px 50px;
     }
     .block-involved .content .actions {
-        margin-top: 30px;
+        margin-top: 10px;
         max-width: 50%;
     }
 
@@ -117,6 +125,17 @@
         max-width: 1140px;
     }
 
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+    .page-header .header-search-wrap,  
+    .page-header .header-left-content {
+        width: 150px;
+    }
+    .header-wrappper .megamenu .mega-menu-link {
+        font-size: 15px;
+        padding: 45px 10px;
+    }
 }
 
 @media (min-width: 1400px) {
